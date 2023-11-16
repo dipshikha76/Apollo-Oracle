@@ -14,10 +14,13 @@ const LS = () => {
     }
 
     await axios.post("http://localhost:4000/logsig", postData).then(res => {
-      if (res.data != "not exist") {
+      if (
+        res.data != "email does not match" &&
+        res.data != "user not found" &&
+        res.data != "password does not match"
+      ) {
         alert(`Hello ${res.data.Name}`);
-      }
-      else {
+      } else {
         alert("wrong credentials");
       }
     }).catch(console.log("something went wrong"));
