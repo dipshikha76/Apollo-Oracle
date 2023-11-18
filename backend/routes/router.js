@@ -4,6 +4,46 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const Users = require("../models/schemas");
 require("mongoose");
+const nodemailer = require("nodemailer");
+require("dotenv").config();
+
+const otp = Math.floor(Math.random() * 100001);
+
+
+router.post("/sendVerificationCode", async (req, res) => {
+  const { Name, Email } = req.body;
+  let testAccount = await nodemailer.createTestAccount();
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.MAIL,
+      pass: process.env.Pass,
+    },
+  });
+
+  let info = await transporter.sendMail({
+    from: process.env.MAIL,
+    to: Email,
+    subject: "verification code",
+    text: `Hello ${Name} , your otp to verify email is : ${otp}`,
+  });
+  res.json("sent");
+});
+
+router.post("/verifyCode", async (req, res) => {
+  const { code } = req.body;
+  try {
+
+    if ( otp == code) {
+      res.status(200).json("Matched");
+    }
+    else {
+      res.json("did not match");
+    };
+  } catch (error) {
+    console.log(error);
+  }
+})
 
 router.post("/sign", async (req, res) => {
   const { Name, DOB, Email, Contact, Password } = req.body;
@@ -23,10 +63,10 @@ router.post("/sign", async (req, res) => {
 
   try {
     await newUser.save();
-    res.status(201).send("User created successfully");
+    res.json("User created successfully");
   } catch (error) {
     console.error(error);
-    res.status(500).send("Internal Server Error");
+    res.json("Internal Server Error");
   }
 });
 
@@ -38,12 +78,10 @@ router.post("/logsig", async (req, res) => {
       const passwordMatched = await bcrypt.compare(Password, user.Password);
       if (passwordMatched) {
         res.json(user);
-      }
-      else {
+      } else {
         res.json("password does not match");
       }
-    }
-    else {
+    } else {
       res.json("email does not match");
     }
   } catch (error) {

@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./LS.module.css";
 import { useState } from "react";
+import { useNavigate, Link } from 'react-router-dom';
 import axios from "axios";
 
 const LS = () => {
+  const navigateTo = useNavigate();
   const [Email, setEmail] = useState("");
   const [Password, setPassword] = useState("");
   
@@ -19,7 +21,7 @@ const LS = () => {
         res.data != "user not found" &&
         res.data != "password does not match"
       ) {
-        alert(`Hello ${res.data.Name}`);
+        navigateTo("/home");
       } else {
         alert("wrong credentials");
       }
