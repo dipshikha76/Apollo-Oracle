@@ -4,11 +4,13 @@ import { useState } from "react";
 import { useNavigate, Link } from 'react-router-dom';
 import axios from "axios";
 
-const LS = () => {
+const LS = (props) => {
   const navigateTo = useNavigate();
   const [Email, setEmail] = useState("");
   const [Password, setPassword] = useState("");
-  
+  // const passData = (data) => {
+  //   props.onSubmit(data);
+  // }
   const axiosPostData = async() => {
     const postData = {
       Email: Email,
@@ -21,6 +23,7 @@ const LS = () => {
         res.data != "user not found" &&
         res.data != "password does not match"
       ) {
+        props.onSubmit(res.data);
         navigateTo("/home");
       } else {
         alert("wrong credentials");

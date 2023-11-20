@@ -1,5 +1,6 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+/* @import url(../node_modules/semantic-ui-css/semantic.min.css); */
+ :root {
+  font-family:'Times New Roman', Times, serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -9,10 +10,7 @@
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+} 
 
 a {
   font-weight: 500;
@@ -43,3 +41,4 @@ h1 {
     background-color: #f9f9f9;
   }
 }
+
