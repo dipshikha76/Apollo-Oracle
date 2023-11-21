@@ -27,7 +27,7 @@ const Sign = () => {
       .post("http://localhost:4000/sign", postData)
       .then((res) => {
         if (res.data == "User created successfully") {
-          navigateTo("/home");
+          navigateTo("/logsig");
         }
       })
       .catch((err) => console.log(err));

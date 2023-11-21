@@ -3,13 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-    overflow-y: hidden;
+    
 }
 .lp_body{
     width: 100vw;
     height: 100vh;
     background: url('./lp-bg.jpg') no-repeat center/cover;
-   
+    overflow-y: hidden;
 }
 .container{
   margin-top: 20vh;

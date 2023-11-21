@@ -36,7 +36,7 @@
   align-items: center;
   color: black;
 }
-.logo span{
+.logo span {
   font-size: 2.5rem;
   font-weight: 600;
   color: Red;
@@ -53,8 +53,8 @@
   margin-top: 3vh;
   font-size: 1.2rem;
 }
-.welcome span{
-  font-family: cursive;
+.welcome span {
+  font-family:  sans-serif;
   color: rgb(247, 37, 37);
 }
 .dashboard {
@@ -69,7 +69,7 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
-.profile:hover{
+.profile:hover {
   cursor: pointer;
 }
 .page1 {
@@ -79,6 +79,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 1.7rem;
+  color: #eede90;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .leftOfPage1 {
@@ -112,6 +115,7 @@
   transition: 0.4s ease-out;
   cursor: pointer;
   border: 1.5px solid rgb(34, 6, 246);
+  color: White;
 }
 .page1LL {
   height: 40vh;
@@ -135,6 +139,7 @@
   transition: 0.4s ease-out;
   cursor: pointer;
   border: 1.5px solid rgb(34, 6, 246);
+  color: White;
 }
 .rightOfPage1 {
   height: 90vh;
@@ -167,6 +172,7 @@
   transition: 0.4s ease-out;
   cursor: pointer;
   border: 1.5px solid rgb(34, 6, 246);
+  color: White;
 }
 .page1RL {
   height: 40vh;
@@ -190,6 +196,7 @@
   transition: 0.4s ease-out;
   cursor: pointer;
   border: 1.5px solid rgb(34, 6, 246);
+  color: White;
 }
 .page2 {
   height: 90vh;
@@ -199,6 +206,9 @@
   justify-content: space-between;
   /* align-items: center; */
   background-color: black;
+  font-size: 1.7rem;
+  color: #eede90;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .leftOfPage2 {
@@ -228,6 +238,7 @@
   transition: 0.4s ease-out;
   cursor: pointer;
   border: 1.5px solid rgb(34, 6, 246);
+  color: White;
 }
 .page2LU.show {
   transform: translateX(0);
@@ -249,12 +260,14 @@
 .page2LL.show {
   transform: translateX(0);
   opacity: 1;
+  color: rgb(236, 59, 88);
 }
 .page2LL.show:hover {
   transform: translateY(-1vh);
   transition: 0.4s ease-out;
   cursor: pointer;
   border: 1.5px solid rgb(34, 6, 246);
+  color: White;
 }
 .rightOfPage2 {
   height: 90vh;
@@ -287,6 +300,7 @@
   transition: 0.4s ease-out;
   cursor: pointer;
   border: 1.5px solid rgb(34, 6, 246);
+  color: White;
 }
 .page2RL {
   height: 40vh;
@@ -303,13 +317,14 @@
 }
 .page2RL.show {
   transform: translateX(0);
-  opacity: 1;
+  opacity: 1; color: rgb(236, 59, 88);
 }
 .page2RL.show:hover {
   transform: translateY(-1vh);
   transition: 0.4s ease-out;
   cursor: pointer;
   border: 1.5px solid rgb(34, 6, 246);
+  color: White;
 }
 .footer {
   height: 10vh;

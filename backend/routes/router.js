@@ -63,7 +63,7 @@ router.post("/sign", async (req, res) => {
 
   try {
     await newUser.save();
-    res.json(newUser);
+    res.json("User created successfully");
   } catch (error) {
     console.error(error);
     res.json("Internal Server Error");

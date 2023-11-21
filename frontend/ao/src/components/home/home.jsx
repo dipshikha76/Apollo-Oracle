@@ -24,13 +24,13 @@ const Home = (data) => {
           </h2>
         </div>
         <div className={styles.welcome}>
-          <h2>Welcome <span>Name</span></h2>
+          <h2>
+            Welcome <span>{data.Name.split(" ")[0]}</span>
+          </h2>
         </div>
         <div className={styles.dashboard}>
           <i className="fa fa-user"></i>
-          <div className={styles.profile}>
-            Your Profile
-          </div>
+          <div className={styles.profile}>Your Profile</div>
         </div>
       </div>
       <div className={styles.page1}>
@@ -38,21 +38,29 @@ const Home = (data) => {
           <div
             ref={myRef1}
             className={`${styles.page1LU} ${p1LUIsVisible ? styles.show : ""}`}
-          ></div>
+          >
+            Hindu Mythological
+          </div>
           <div
             ref={myRef2}
             className={`${styles.page1LL} ${p1LLIsVisible ? styles.show : ""}`}
-          ></div>
+          >
+            Indian Current Affais
+          </div>
         </div>
         <div className={styles.rightOfPage1}>
           <div
             ref={myRef3}
             className={`${styles.page1RU} ${p1RUIsVisible ? styles.show : ""}`}
-          ></div>
+          >
+            Indian and World History
+          </div>
           <div
             ref={myRef4}
             className={`${styles.page1RL} ${p1RLIsVisible ? styles.show : ""}`}
-          ></div>
+          >
+            World Current Affairs
+          </div>
         </div>
       </div>
       <div className={styles.page2}>
@@ -60,21 +68,29 @@ const Home = (data) => {
           <div
             ref={myRef5}
             className={`${styles.page2LU} ${p2LUIsVisible ? styles.show : ""}`}
-          ></div>
+          >
+            Sports
+          </div>
           <div
             ref={myRef6}
             className={`${styles.page2LL} ${p2LLIsVisible ? styles.show : ""}`}
-          ></div>
+          >
+            Create Your Own Quiz
+          </div>
         </div>
         <div className={styles.rightOfPage2}>
           <div
             ref={myRef7}
             className={`${styles.page2RU} ${p2RUIsVisible ? styles.show : ""}`}
-          ></div>
+          >
+            Entertainment
+          </div>
           <div
             ref={myRef8}
             className={`${styles.page2RL} ${p2RLIsVisible ? styles.show : ""}`}
-          ></div>
+          >
+            Fun Zone
+          </div>
         </div>
       </div>
       <div className={styles.footer}></div>
