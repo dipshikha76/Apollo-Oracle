@@ -38,7 +38,7 @@ const Home = (data) => {
         <div className={styles.leftOfPage1}>
           <Link
             to={"/quiz"}
-            style={{ textDecoration: "none" , color: "inherit"}}
+            style={{ textDecoration: "none", color: "inherit" }}
           >
             <div
               ref={myRef1}
@@ -79,12 +79,19 @@ const Home = (data) => {
           >
             Sports
           </div>
-          <div
-            ref={myRef6}
-            className={`${styles.page2LL} ${p2LLIsVisible ? styles.show : ""}`}
+          <Link
+            to={"http://localhost:3000/quiz-app"}
+            style={{ textDecoration: "none", color: "inherit" }}
           >
-            Create Your Own Quiz
-          </div>
+            <div
+              ref={myRef6}
+              className={`${styles.page2LL} ${
+                p2LLIsVisible ? styles.show : ""
+              }`}
+            >
+              Create Your Own Quiz
+            </div>
+          </Link>
         </div>
         <div className={styles.rightOfPage2}>
           <div
@@ -102,7 +109,9 @@ const Home = (data) => {
         </div>
       </div>
       <div className={styles.footer}>
-        <h2><b>This Website is created under Webster 2k23 by :</b></h2>
+        <h2>
+          <b>This Website is created under Webster 2k23 by :</b>
+        </h2>
         <h3>Tarun Rai</h3>
         <h3>Ujjwal Kumar</h3>
         <h3>Priyanshu Tripathi</h3>
