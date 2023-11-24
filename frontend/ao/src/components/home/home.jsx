@@ -101,7 +101,12 @@ const Home = (data) => {
           </div>
         </div>
       </div>
-      <div className={styles.footer}></div>
+      <div className={styles.footer}>
+        <h2><b>This Website is created under Webster 2k23 by :</b></h2>
+        <h3>Tarun Rai</h3>
+        <h3>Ujjwal Kumar</h3>
+        <h3>Priyanshu Tripathi</h3>
+      </div>
     </div>
   );
 };

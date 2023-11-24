@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import styles from "./ResultTable.module.css";
 
 const ResultTable = (allResults) => {

@@ -327,9 +327,14 @@
   color: White;
 }
 .footer {
-  height: 10vh;
+  height: 20vh;
   width: 100vw;
   background: linear-gradient(to bottom, #d8cdcd, #fdfafa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 ::-webkit-scrollbar {
