@@ -21,7 +21,7 @@ body, html{
   margin: 0px auto;
   height: auto;
   width: 800px;
-  padding: -20px;
+  padding: 0px;
 }
 
 .container .title{
@@ -55,7 +55,7 @@ body, html{
 }
 
 .container .questions{
-    padding:0  3em;
+    padding:10px  3em;
 }
 
 .container .grid{
@@ -154,22 +154,22 @@ ul li .check::before {
 
 
 input[type=radio]:Checked ~ .check {
-  border: 5px solid var(--primary-color)
+  border: 5px solid rgb(246, 246, 167)
 }
 
 input[type=radio]:Checked ~ .check::before{
-  background: var(--primary-color)
+  background: rgb(246, 246, 167)
 }
 
 input[type=radio]:Checked ~ .text-primary{
-  color: var(--primary-color)
+  color: rgb(246, 246, 167)
 } 
 
 /* To get selected option we are using this checked class */
 .Checked {
-  border: 5px solid var(--primary-color) !important;
+  border: 5px solid rgb(246, 246, 167) !important;
 }
 
 .Checked::before{
-  background: var(--primary-color)
+  background: rgb(246, 246, 167)
 }

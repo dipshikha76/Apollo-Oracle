@@ -3,6 +3,7 @@ import styles from "./home.module.css";
 import { symbol } from "prop-types";
 import { useInView } from "react-intersection-observer";
 import "font-awesome/css/font-awesome.min.css";
+import { Link } from "react-router-dom";
 
 const Home = (data) => {
   const { ref: myRef1, inView: p1LUIsVisible } = useInView();
@@ -35,12 +36,19 @@ const Home = (data) => {
       </div>
       <div className={styles.page1}>
         <div className={styles.leftOfPage1}>
-          <div
-            ref={myRef1}
-            className={`${styles.page1LU} ${p1LUIsVisible ? styles.show : ""}`}
+          <Link
+            to={"/quiz"}
+            style={{ textDecoration: "none" , color: "inherit"}}
           >
-            Hindu Mythological
-          </div>
+            <div
+              ref={myRef1}
+              className={`${styles.page1LU} ${
+                p1LUIsVisible ? styles.show : ""
+              }`}
+            >
+              Hindu Mythological
+            </div>
+          </Link>
           <div
             ref={myRef2}
             className={`${styles.page1LL} ${p1LLIsVisible ? styles.show : ""}`}

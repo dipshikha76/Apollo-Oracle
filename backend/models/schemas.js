@@ -16,17 +16,36 @@ const signupSchema = new Schema({
   Email: {
     type: String,
     required: true,
-    },
-    Contact: {
-        type: Number,
-        required: true,
-    },
-    Password: {
-        type: String,
-        required: true,
-    }
+  },
+  Contact: {
+    type: Number,
+    required: true,
+  },
+  Password: {
+    type: String,
+    required: true,
+  }
+});
+const resultSchema = new Schema({
+  email: {
+    type: String,
+    required : true,
+  },
+  name: {
+    type: String,
+    required: true,
+  },
+  attempts: {
+    type: Number,
+    required: true,
+  },
+  score: {
+    type: Number,
+    required: true,
+  },
 });
 
+const LeaderBoard = new mongoose.model("LeaderBoard", resultSchema , 'result');
 const Users = new mongoose.model('Users', signupSchema, 'users');
 
-module.exports = Users;
+module.exports = { Users, LeaderBoard };

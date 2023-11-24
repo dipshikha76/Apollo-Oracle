@@ -21,8 +21,8 @@ const App = () => {
         <Route path="logsig" element={<LS onSubmit={getData} />} />
         <Route path="sign" element={<Sign />} />
         <Route path="home" element={<Home {...user} />} />
-        <Route path="quiz" element={<Quiz />} />
-        <Route path="/result" element={<Result />} />
+        <Route path="quiz" element={<Quiz {...user} />} />
+        <Route path="/result" element={<Result {...user} />} />
       </Routes>
     </BrowserRouter>
   );

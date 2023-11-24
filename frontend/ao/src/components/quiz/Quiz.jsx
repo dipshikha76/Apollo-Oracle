@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { MoveNextQuestion , MovePrevQuestion } from "../../hooks/FetchQuestions";
 import { Navigate } from 'react-router-dom';
 
-const Quiz = () => {
+const Quiz = (userData) => {
   const [check, setCheck] = useState(undefined);
   const {queue , trace} = useSelector(state => state.questions)
   const dispatch = useDispatch()

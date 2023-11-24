@@ -1,6 +1,9 @@
-import React from 'react'
-import  styles  from './ResultTable.module.css';
-const ResultTable = () => {
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import styles from "./ResultTable.module.css";
+
+const ResultTable = (allResults) => {
+
   return (
     <div>
       <table>
@@ -12,15 +15,18 @@ const ResultTable = () => {
           </tr>
         </thead>
         <tbody>
-          <tr className={styles.tableBody}>
-            <td>Ujjwal</td>
-            <td>3</td>
-            <td>20</td>
-          </tr>
+          {allResults &&
+            allResults.allResults.map((result) => (
+              <tr className={styles.tableBody} key={result.email}>
+                <td>{result.name}</td>
+                <td>{result.attempts}</td>
+                <td>{result.score}</td>
+              </tr>
+            ))}
         </tbody>
       </table>
     </div>
   );
-}
+};
 
-export default ResultTable
+export default ResultTable;
