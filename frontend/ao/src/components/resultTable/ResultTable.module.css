@@ -1,0 +1,101 @@
+:root{
+  --primary-color: #0DFF92;
+  --dark-color:#222222;
+  --light-color: #f0f0f0;
+}
+body, html{
+  height: 100%;
+  background: var(--dark-color);
+  color: black
+}
+.container{
+  display: block;
+  position: relative;
+  margin: 0px auto;
+  height: auto;
+  width: 800px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.container .title{
+    font-size: 3em;
+    text-align: center;
+    padding:10px .2em;
+    border-radius: 4px;
+    color: white;
+    letter-spacing: 3px;
+}
+.title span{
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: Red;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    border: 1px solid #cecece;
+    padding: 3em 4em;
+    margin-bottom: 40px;
+    gap: 1em;
+}
+
+.container .flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container .flex span {
+    font-size: 1.4em;
+    color: #cecece;
+}
+
+.container .flex span.achive {
+    font-weight: bold;
+    color: #ff2a66;
+    color: #2aff95;
+}
+
+table {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.table-header {
+    color: #cecece;
+    font-size: 1.1em;
+    text-align: center;
+    background: #212121;
+    padding: 18px 0;
+}
+
+.table-body {
+    font-size: 1.1em;
+    text-align: center;
+    /* color: #cecece; */
+    background: #d8d8d8;
+    padding: 18px 0;
+}
+
+.table-header > tr > td{
+    border: 1px solid #faff5a;   
+}
+.container .btn{
+    padding: .2em 1.7em;
+    border: none;
+    border-radius: .1em;
+    font-size: 1.2em;
+    background-color: #faff5a;
+    position: absolute;
+    left: 40%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container .btn:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #202020;
+}

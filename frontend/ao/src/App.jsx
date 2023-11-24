@@ -1,8 +1,10 @@
-// import './App.css'
-import LP from './lp/LP'
-import LS from './logsig/LS'
-import Sign from './sign/Sign'
-import Home from './home/home'
+import './index.css'
+import LP from './components/lp/LP'
+import LS from "./components/logsig/LS";
+import Sign from "./components/sign/Sign";
+import Home from "./components/home/home";
+import Quiz from './components/quiz/Quiz';
+import Result from './components/result/Result';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
 
@@ -18,7 +20,9 @@ const App = () => {
         <Route path="/" element={<LP />} />
         <Route path="logsig" element={<LS onSubmit={getData} />} />
         <Route path="sign" element={<Sign />} />
-        <Route path="home" element={<Home {...user} />} />  
+        <Route path="home" element={<Home {...user} />} />
+        <Route path="quiz" element={<Quiz />} />
+        <Route path="/result" element={<Result />} />
       </Routes>
     </BrowserRouter>
   );
