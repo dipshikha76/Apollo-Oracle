@@ -8,6 +8,19 @@ body, html{
   background: var(--dark-color);
   color: black
 }
+.gotohome{
+    position: absolute;
+    right: 6vw;
+    width: 10vw;
+    height: 5vh;
+    font-size: large;
+    top: 5vh;
+    font-weight: 550;
+    background-color: rgb(88, 238, 88);
+}
+.gotohome:hover{
+    cursor: pointer;
+}
 .container{
   display: block;
   position: relative;

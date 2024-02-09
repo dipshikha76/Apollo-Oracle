@@ -18,10 +18,10 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LP />} />
-        <Route path="logsig" element={<LS onSubmit={getData} />} />
-        <Route path="sign" element={<Sign />} />
-        <Route path="home" element={<Home {...user} />} />
-        <Route path="quiz" element={<Quiz {...user} />} />
+        <Route path="/logsig" element={<LS onSubmit={getData} />} />
+        <Route path="/sign" element={<Sign />} />
+        <Route path="/home" element={<Home  />} />
+        <Route path="/quiz" element={<Quiz {...user} />} />
         <Route path="/result" element={<Result {...user} />} />
       </Routes>
     </BrowserRouter>

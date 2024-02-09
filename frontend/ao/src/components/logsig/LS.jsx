@@ -3,14 +3,12 @@ import styles from "./LS.module.css";
 import { useState } from "react";
 import { useNavigate, Link } from 'react-router-dom';
 import axios from "axios";
+import { getUserData, loggedIn, setLoggedIn } from "./userData";
 
 const LS = (props) => {
   const navigateTo = useNavigate();
   const [Email, setEmail] = useState("");
   const [Password, setPassword] = useState("");
-  // const passData = (data) => {
-  //   props.onSubmit(data);
-  // }
   const axiosPostData = async() => {
     const postData = {
       Email: Email,
@@ -24,6 +22,8 @@ const LS = (props) => {
         res.data != "password does not match"
       ) {
         props.onSubmit(res.data);
+        getUserData(res.data);
+        setLoggedIn();
         navigateTo("/home");
       } else {
         alert("wrong credentials");
@@ -33,6 +33,7 @@ const LS = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // loggedIn = true;
     axiosPostData();
   }
 

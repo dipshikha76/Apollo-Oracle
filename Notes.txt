@@ -1,0 +1,83 @@
+Node js
+Express js
+React js
+css
+Mongo db(non relational database)
+java script
+
+application -> web application + android application
+
+Name of the Project = Apollo's Oracle (quiz application); -> (greek mythology)
+/////////////////////////////////////////////////////////////
+
+Projects -> backend -> frontend
+1. backend (javascript , nodejs , expressjs , mongo db)
+    3 folders => models + node modules + routes
+    .env + gitignore + index.js
+
+2.frontend(react + css + html);
+   ao
+    2 folders => node_modules and src;
+    gitignore+index.html
+
+
+Important baat
+  application = backend + frontend;
+  backend = server;
+  frontend = client;
+  server interacts with backend
+  clients or users interacts with frontend;
+
+***********************backend*******************************
+
+brain of the backend = index.js
+schema.js => kis format me hmara data store ho rha;
+
+
+1. java script => it is a programming language which is object based programming language
+why javascript?
+    java script is most widely used to develop websites.
+    javascript ka community support sbse large.
+    most of the web browsers only support javascript.(chrome , mozilla, internet explored, opera);
+
+2. Node.js
+   definition => Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside of a web browser.
+ why node js?
+    fast and most secured websites are made using node js;
+
+3. Express js(framework not library)
+    this is an framework of node js.
+why expressjs?
+    Express is widely used in the Node.js ecosystem, due to its simplicity, flexibility, and extensibility.
+    simplicity-> easily code written.
+    flexibility -> folders can be created flexibly.
+    extensibility -> large application can be made.
+
+4. Mongo db
+    Mongo db -> ek website hai that supports data base management system.
+    mongo db helps to store database in non-tabular manner.
+    stores user data and other data.
+
+
+******************************Frontend********************************************
+
+1.React(library not framework)
+    React technology was developed by facebook engineers.
+    frontend develop => components(buttons , forms , navbar)
+    definition => React is widely used for creating dynamic and interactive web applications with a focus on efficiency and performance.
+    >>> React is a technology which was developed by facebook engineers and is widely used for creating frontend for the websites using components.
+ why react? 
+    react community support is large.
+    easy to use and develop ui(frontend).
+    react helps us create dynamic websites.
+    react helps us create interactive website.
+
+2. css (cascading style sheets)
+    css is used for designing.(make up)
+    it designs components created by react.
+
+3. HTML(hyper text markup language)
+    html is used as a entry point for web applications and also used for creating websites.
+
+  npm ==> node package modules
+

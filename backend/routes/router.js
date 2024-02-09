@@ -25,7 +25,7 @@ router.post("/sendVerificationCode", async (req, res) => {
     from: process.env.MAIL,
     to: Email,
     subject: "verification code",
-    text: `Hello ${Name} , your otp to verify email is : ${otp}`,
+    text: `Hello ${Name} , your otp to verify your email for Apollo's Oracle is : ${otp}`,
   });
   res.json("sent");
 });

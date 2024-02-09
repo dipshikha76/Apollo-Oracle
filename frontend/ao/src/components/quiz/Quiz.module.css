@@ -14,7 +14,29 @@ body, html{
 * > *{
     font-family: 'Poppins', sans-serif;
 }
-
+.subtitlediv{
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+}
+.quitdiv{
+  margin-left: 18vw;
+  margin-bottom: 15vh;
+}
+.quitbtn{
+  width: 6vw;
+  height: 5vh;
+  font-size: large;
+  font-weight: 550;
+  color: white;
+  background-color: rgb(255, 98, 0);
+  color: black;
+}
+.quitbtn:hover{
+  cursor: pointer;
+  font-weight: 600;
+}
 .container{
   display: block;
   position: relative;

@@ -19,11 +19,11 @@ app.use(cors(corsOptions));
 
 app.use("/", router);
 
-const dbOptions = { useNewUrlParser: true, useUnifiedTopology: true };
+// const dbOptions = { useNewUrlParser: true, useUnifiedTopology: true };
 //upper db options is no longer needed;
 
 mongoose
-  .connect(process.env.MONGO_URI, dbOptions)
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("database connected");
   })
